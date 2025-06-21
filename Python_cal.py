@@ -1,11 +1,25 @@
-num1 = 5
-num2 = 10
-sum = 0
-min =0
+operator = input("Enter an operator")
+num1 = int(input("Enter num1:"))
+num2 = int(input("Enter num2:"))
 
 
-sum = num1 + num2 
-min = num2 - num1
-mul = num1 * num2
-Div = num2 // num1
-print(sum, min, mul,Div)
+if operator == "+":
+    result = num1 + num2
+
+    print(result)
+
+elif operator == "-" :
+    result = num2 - num1
+    print(result)
+
+elif operator == "*":
+    result = num1 * num2
+    print(result)
+
+elif operator == "/":
+
+ result = num2 // num1
+ print(result)
+
+else:
+   print(f"{operator} is not a valid operator")
